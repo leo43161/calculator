@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bbb52c970c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="body-c">
+            <div class="resultado">
+                <div class="mostrar" id="resultado">
+                    <p id="operacion"></p>
+                </div>
+            </div>
+
+            <div class="botones">
+                <div class="filas fila-1">
+                    <button class="btn" id="cero" onclick="bCero()">0</button>
+                    <button class="btn" id="punto" onclick="bPunto()">.</button>
+                    <button class="btn" id="mas" onclick="bMas()"><i class="fas fa-plus"></i></button>
+                    <button class="btn" id="igual" onclick="bIgual()"><i class="fas fa-equals"></i></button>
+                </div>
+                <div class="filas fila-2">
+                    <button class="btn" id="uno" onclick="bUno()">1</button>
+                    <button class="btn" id="dos" onclick="bDos()">2</button>
+                    <button class="btn" id="tres" onclick="bTres()">3</button>
+                    <button class="btn" id="menos" onclick="bMenos()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="filas fila-3">
+                    <button class="btn" id="cuatro" onclick="bCuatro()">4</button>
+                    <button class="btn" id="cinco" onclick="bCinco()">5</button>
+                    <button class="btn" id="seis" onclick="bSeis()">6</button>
+                    <button class="btn" id="por" onclick="bPor()"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="filas fila-4">
+                    <button class="btn" id="siete" onclick="bSiete()">7</button>
+                    <button class="btn" id="ocho" onclick="bOcho()">8</button>
+                    <button class="btn" id="nueve" onclick="bNueve()">9</button>
+                    <button class="btn" id="dividir" onclick="bDividir()"><i class="fas fa-divide"></i></button>
+                </div>
+                <div class="filas fila-5">
+                    <button class="btn" id="borrar" onclick="bBorrar()">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
