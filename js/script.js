@@ -18,7 +18,6 @@ let operacion = document.getElementById("operacion");
 
 let termino1 = "";
 let termino2 = "";
-let termino3 = "";
 let calculo = "";
 
 function bUno() {
@@ -204,11 +203,8 @@ function bIgual() {
             termino2 = "";
             break;
         case operacion.innerHTML.includes("-"):
-            console.log(parseFloat(termino1));
-            console.log(parseFloat(termino2));
             calculo = (parseFloat(termino1)) - (parseFloat(termino2));
-            console.log(calculo);
-            operacion.innerHTML = calculo;
+            operacion.innerHTML = calculo.toFixed(2);
             termino1 = operacion.innerHTML.toString();
             termino2 = "";
             break;
